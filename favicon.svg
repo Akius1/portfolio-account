@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a18"/>
+      <stop offset="100%" stop-color="#0d0d0b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <clipPath id="roundedClip">
+      <rect width="32" height="32" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bgGrad)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="32" height="3" rx="1.5" fill="url(#accentGrad)" clip-path="url(#roundedClip)"/>
+
+  <!-- Letter A — geometric paths -->
+  <!-- Left stroke -->
+  <polygon points="4,25 6.8,25 11,10 8.2,10" fill="white"/>
+  <!-- Right stroke -->
+  <polygon points="11,10 13.8,10 18,25 15.2,25" fill="white"/>
+  <!-- Crossbar -->
+  <rect x="7.5" y="19" width="8" height="2.2" rx="1.1" fill="white"/>
+
+  <!-- Letter U — geometric paths -->
+  <!-- Left stroke -->
+  <rect x="19.5" y="10" width="2.5" height="11" rx="1.25" fill="white"/>
+  <!-- Right stroke -->
+  <rect x="25.5" y="10" width="2.5" height="11" rx="1.25" fill="white"/>
+  <!-- Bottom arc approximated as rounded rect -->
+  <rect x="19.5" y="19" width="8.5" height="3" rx="1.5" fill="white"/>
+
+</svg>
