@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Urom - Senior Frontend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/_projects.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">AU</span>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Andrew Urom</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="mailto:andrewurom@gmail.com" class="nav-cta magnetic">Hire Me</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <!-- Gradient orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: text content -->
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line" data-text="Andrew">Andrew</span>
+          <span class="name-line accent-line" data-text="Urom">Urom</span>
+        </h1>
+        <p class="hero-role reveal-up">
+          <span class="role-text">Senior Frontend Engineer</span>
+          <span class="role-separator">·</span>
+          <span class="role-text">Design Systems</span>
+          <span class="role-separator">·</span>
+          <span class="role-text">AI-Native</span>
+        </p>
+        <p class="hero-bio reveal-up">
+          6+ years crafting high-performance TypeScript &amp; React products at scale.
+          From Nigeria's largest payment infrastructure to AI-powered applications.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
+          <a href="#contact" class="btn btn-ghost magnetic">Get In Touch</a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Top Fintechs</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="40">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Bug Reduction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="35">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Faster Load</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: floating visual cards -->
+      <div class="hero-visual reveal-right">
+
+        <!-- Card 1: Current role -->
+        <div class="float-card card-role float-a">
+          <div class="fc-top">
+            <div class="fc-dot green"></div>
+            <span class="fc-label">Currently at</span>
+          </div>
+          <div class="fc-company">Interswitch Group</div>
+          <div class="fc-title">Senior Software Engineer</div>
+          <div class="fc-meta">Sep 2023 - Present · Lagos, NG</div>
+          <div class="fc-tags">
+            <span>React</span><span>TypeScript</span><span>Next.js</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Steward app mini chart -->
+        <div class="float-card card-steward float-b">
+          <div class="fc-top">
+            <div class="fc-icon">📱</div>
+            <div>
+              <div class="fc-app-name">Steward</div>
+              <div class="fc-app-sub">Personal Finance App</div>
+            </div>
+          </div>
+          <div class="mini-chart">
+            <svg viewBox="0 0 160 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a56db" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#1a56db" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 45 L20 38 L40 42 L60 28 L80 32 L100 18 L120 22 L140 10 L160 14 L160 60 L0 60Z" fill="url(#chartGrad)"/>
+              <path d="M0 45 L20 38 L40 42 L60 28 L80 32 L100 18 L120 22 L140 10 L160 14" stroke="#1a56db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="160" cy="14" r="4" fill="#1a56db"/>
+            </svg>
+          </div>
+          <div class="fc-stat-row">
+            <div class="fc-mini-stat">
+              <span class="fc-mini-num">↑ 94%</span>
+              <span class="fc-mini-label">AI accuracy</span>
+            </div>
+            <div class="fc-mini-stat">
+              <span class="fc-mini-num">Claude</span>
+              <span class="fc-mini-label">API powered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Tech stack pill cluster -->
+        <div class="float-card card-stack float-c">
+          <div class="fc-stack-label">Core Stack</div>
+          <div class="fc-stack-pills">
+            <span class="sp sp-ts">TypeScript</span>
+            <span class="sp sp-react">React 18</span>
+            <span class="sp sp-next">Next.js</span>
+            <span class="sp sp-ai">Claude API</span>
+            <span class="sp sp-node">Node.js</span>
+            <span class="sp sp-tail">Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Deco ring -->
+        <div class="hero-ring"></div>
+
+      </div>
+    </div>
+
+    <!-- Marquee ticker -->
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>React 18</span><span class="sep">·</span>
+        <span>TypeScript</span><span class="sep">·</span>
+        <span>Next.js</span><span class="sep">·</span>
+        <span>Design Systems</span><span class="sep">·</span>
+        <span>Anthropic API</span><span class="sep">·</span>
+        <span>Node.js</span><span class="sep">·</span>
+        <span>Storybook</span><span class="sep">·</span>
+        <span>Redux Toolkit</span><span class="sep">·</span>
+        <span>Tailwind CSS</span><span class="sep">·</span>
+        <span>WCAG 2.1</span><span class="sep">·</span>
+        <span>GraphQL</span><span class="sep">·</span>
+        <span>React Native</span><span class="sep">·</span>
+        <span>Docker</span><span class="sep">·</span>
+        <span>Cypress</span><span class="sep">·</span>
+        <!-- duplicate for seamless loop -->
+        <span>React 18</span><span class="sep">·</span>
+        <span>TypeScript</span><span class="sep">·</span>
+        <span>Next.js</span><span class="sep">·</span>
+        <span>Design Systems</span><span class="sep">·</span>
+        <span>Anthropic API</span><span class="sep">·</span>
+        <span>Node.js</span><span class="sep">·</span>
+        <span>Storybook</span><span class="sep">·</span>
+        <span>Redux Toolkit</span><span class="sep">·</span>
+        <span>Tailwind CSS</span><span class="sep">·</span>
+        <span>WCAG 2.1</span><span class="sep">·</span>
+        <span>GraphQL</span><span class="sep">·</span>
+        <span>React Native</span><span class="sep">·</span>
+        <span>Docker</span><span class="sep">·</span>
+        <span>Cypress</span><span class="sep">·</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 - About</span>
+        <h2 class="section-title split-text">Precision meets<br/><em>craft.</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            I'm Andrew - a Senior Frontend Engineer based in Lagos, Nigeria, with a
+            deep obsession for building interfaces that are fast, accessible, and beautifully engineered.
+          </p>
+          <p class="about-body">
+            My career spans Nigeria's biggest financial institutions - <strong>Interswitch Group</strong>,
+            <strong>Access Bank</strong>, and <strong>Africa Prudential</strong> - where I've shipped
+            mission-critical products processing millions of daily transactions. I architect design systems
+            from scratch, establish engineering culture, and mentor teams.
+          </p>
+          <p class="about-body">
+            I'm genuinely AI-native: I hold certifications from Anthropic, OpenAI, and Oracle, have built
+            production LLM pipelines with the Claude API, and use Cursor and Claude Code daily.
+            I founded <strong>Steward</strong>, a React Native finance app with AI-generated reports powered
+            by Claude.
+          </p>
+          <div class="about-certs">
+            <span class="cert-pill">Oracle OCI Gen AI Pro</span>
+            <span class="cert-pill">Oracle AI Vector Search Pro</span>
+            <span class="cert-pill">OpenAI Prompt Engineering</span>
+            <span class="cert-pill">Scrum Certified</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="about-avatar">AU</div>
+              <div class="about-card-info">
+                <h3>Andrew Urom</h3>
+                <p>Lagos, Nigeria 🇳🇬</p>
+              </div>
+            </div>
+            <div class="about-tags">
+              <span class="tag">React 18</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Design Systems</span>
+              <span class="tag">Anthropic API</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Storybook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 - Skills</span>
+        <h2 class="section-title split-text">The full<br/><em>stack.</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">⚡</div>
+          <h3>Core Frontend</h3>
+          <p>React 16–18, TypeScript, Next.js, JavaScript ES6+, HTML5, CSS3, Tailwind, Sass, Material-UI</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🎨</div>
+          <h3>Design Systems</h3>
+          <p>Component library architecture, Storybook, design tokens, WCAG 2.1 accessibility, cross-team UI consistency</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🤖</div>
+          <h3>AI & LLM</h3>
+          <p>Anthropic API (Claude), OpenAI API, Oracle OCI Generative AI, Prompt Engineering, RAG pipelines</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">📦</div>
+          <h3>State & Data</h3>
+          <p>Redux Toolkit, RTK Query, React Query (TanStack), Zustand, Context API, GraphQL</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🚀</div>
+          <h3>Performance</h3>
+          <p>Webpack/Vite, code splitting, lazy loading, Lighthouse, bundle analysis, New Relic, Sentry</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🔧</div>
+          <h3>Full-Stack & DevOps</h3>
+          <p>Node.js, Express, FastAPI, PostgreSQL, MongoDB, Docker, GitHub Actions, AWS, React Native</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 - Experience</span>
+        <h2 class="section-title split-text">Where I've<br/><em>shipped.</em></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">2023 - Present</span>
+            <div class="timeline-dot current"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Senior Software Engineer</h3>
+              <span class="timeline-company">Interswitch Group</span>
+              <span class="timeline-badge">Nigeria's #1 Payment Tech</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built cohesive React component library & design system (Storybook) in TypeScript - adopted across 3+ product lines</li>
+              <li>Established frontend engineering standards - 40% reduction in production bugs, 30% faster onboarding</li>
+              <li>Reduced bundle load time by <strong>35%</strong> through code splitting, lazy loading, and Webpack/Vite profiling</li>
+              <li>Led a team of 5 engineers; mentored 3 junior developers across payment and energy management platforms</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React</span><span>TypeScript</span><span>Next.js</span><span>Redux Toolkit</span>
+              <span>Storybook</span><span>Jest</span><span>Cypress</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">2022 - 2023</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <span class="timeline-company">Africa Prudential</span>
+              <span class="timeline-badge">Investment & Pension</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led migration of legacy apps to modern React/TypeScript SPA - cut load times <strong>50%</strong>, lifted engagement <strong>20%</strong></li>
+              <li>Built full-stack applicant management platform handling 10,000+ applications annually</li>
+              <li>Introduced Git standards & GitHub Actions CI/CD adopted organisation-wide - 30% fewer production issues</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React</span><span>TypeScript</span><span>Redux</span><span>Material-UI</span>
+              <span>Node.js</span><span>PostgreSQL</span><span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">2019 - 2022</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Full Stack Software Engineer</h3>
+              <span class="timeline-company">Access Bank</span>
+              <span class="timeline-badge">50M+ Customers</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built high-performance React/TypeScript banking applications - reduced API response times <strong>25%</strong></li>
+              <li>Developed loan application portal with real-time processing & JWT authentication</li>
+              <li>Built <em>Swiftpay</em> - cross-platform React Native app integrating Interswitch & Paystack payment gateways</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React</span><span>TypeScript</span><span>Next.js</span><span>Node.js</span>
+              <span>PostgreSQL</span><span>MongoDB</span><span>React Native</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 - Projects</span>
+        <h2 class="section-title">Things I've<br/><em>built.</em></h2>
+      </div>
+
+      <!-- ═══ GOODACTION — HERO CASE STUDY ═══ -->
+      <div class="cs-wrap">
+        <div class="cs-card">
+
+          <!-- Dark green top stripe with live indicator -->
+          <div class="cs-topbar">
+            <div class="cs-live-badge">
+              <span class="cs-live-dot"></span>
+              Live product · Serving users globally
+            </div>
+            <a href="https://www.goodaction.com" target="_blank" rel="noopener" class="cs-visit magnetic">
+              goodaction.com
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+
+          <div class="cs-body">
+            <!-- LEFT: info -->
+            <div class="cs-info">
+              <div class="cs-badges">
+                <span class="cs-badge freelance">Freelance</span>
+                <span class="cs-badge impact">Social Impact</span>
+                <span class="cs-badge web">Web + Mobile</span>
+              </div>
+
+              <h3 class="cs-title">GoodAction</h3>
+              <p class="cs-tagline">"Build communities that take action."</p>
+
+              <p class="cs-desc">
+                A full-scale social impact platform - the LinkedIn for good. Organizations run programs,
+                mobilize volunteers, raise funds, and measure real-world impact. Individuals build a
+                verified <strong>Good Identity</strong> that compounds over time.
+              </p>
+
+              <p class="cs-desc">
+                Brought in as freelance frontend engineer to architect and ship the complete web experience
+                from design system to production - now serving a global user base across nonprofits,
+                companies, and volunteers.
+              </p>
+
+              <!-- Impact stats row -->
+              <div class="cs-impact-row">
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num">$1.8M</span>
+                  <span class="cs-impact-label">Impact mobilized</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num">15K+</span>
+                  <span class="cs-impact-label">Lives touched</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num">22+</span>
+                  <span class="cs-impact-label">Nonprofits served</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num">Global</span>
+                  <span class="cs-impact-label">User reach</span>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React</span><span>Next.js</span><span>TypeScript</span>
+                <span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+
+              <div class="cs-actions">
+                <a href="https://www.goodaction.com" target="_blank" rel="noopener" class="btn btn-primary magnetic cs-btn-primary">
+                  View Live Site
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: staggered screenshots -->
+            <div class="cs-screens">
+              <div class="cs-screen-wrap">
+
+                <!-- Screenshot 1 — main large, top-left -->
+                <div class="cs-ss cs-ss-1">
+                  <img src="assets/images/goodaction_1_hero.png" alt="GoodAction hero - Build communities that take action" loading="lazy" />
+                </div>
+
+                <!-- Screenshot 2 — problem section, mid-right -->
+                <div class="cs-ss cs-ss-2">
+                  <img src="assets/images/goodaction_2_problem.png" alt="GoodAction - The problem: Good people stay invisible" loading="lazy" />
+                </div>
+
+                <!-- Screenshot 3 — platform section, bottom-left overlap -->
+                <div class="cs-ss cs-ss-3">
+                  <img src="assets/images/goodaction_3_platform.png" alt="GoodAction platform - Record, Verify, Amplify" loading="lazy" />
+                </div>
+
+                <!-- Screenshot 4 — audience/actions feed, floating -->
+                <div class="cs-ss cs-ss-4">
+                  <img src="assets/images/goodaction_4_audience.png" alt="GoodAction - Discover actions worth your time" loading="lazy" />
+                </div>
+
+                <!-- Decorative elements -->
+                <div class="cs-deco-ring"></div>
+                <div class="cs-deco-dot cs-deco-dot-1"></div>
+                <div class="cs-deco-dot cs-deco-dot-2"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ INTERSWITCH ENERGY — CASE STUDY 2 ═══ -->
+      <div class="cs-wrap cs-wrap-energy">
+        <div class="cs-card cs-card-energy">
+
+          <div class="cs-topbar cs-topbar-energy">
+            <div class="cs-live-badge">
+              <span class="cs-live-dot cs-live-dot-blue"></span>
+              Live · energymarketplace.interswitchgroup.com
+            </div>
+            <a href="https://energymarketplace.interswitchgroup.com" target="_blank" rel="noopener" class="cs-visit cs-visit-energy magnetic">
+              Visit Platform
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+
+          <div class="cs-body cs-body-energy">
+
+            <!-- LEFT: info -->
+            <div class="cs-info cs-info-energy">
+              <div class="cs-badges">
+                <span class="cs-badge cs-badge-interswitch">Interswitch Group</span>
+                <span class="cs-badge cs-badge-architect">Architect</span>
+                <span class="cs-badge cs-badge-enterprise">Enterprise</span>
+              </div>
+
+              <h3 class="cs-title">Energy Marketplace</h3>
+              <p class="cs-tagline">"Smart energy, true freedom."</p>
+
+              <p class="cs-desc">
+                Nigeria's premier solar financing marketplace — built and architected at
+                <strong>Interswitch Group</strong>, Nigeria's leading payment technology company
+                (Licensed by CBN). A complete platform enabling homeowners and businesses to
+                purchase solar equipment and access flexible financing for full system installations.
+              </p>
+
+              <p class="cs-desc">
+                Architected the entire frontend from blank slate — product catalogue, energy calculator,
+                vendor marketplace, installation booking, and financing flows — processing
+                transactions on the same infrastructure that handles millions of daily payments.
+              </p>
+
+              <div class="cs-impact-row cs-impact-row-energy">
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-energy">4</span>
+                  <span class="cs-impact-label">Product lines</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-energy">CBN</span>
+                  <span class="cs-impact-label">Licensed</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-energy">∞</span>
+                  <span class="cs-impact-label">Solar financing</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-energy">NG</span>
+                  <span class="cs-impact-label">Nationwide</span>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React</span><span>TypeScript</span><span>Next.js</span>
+                <span>Tailwind CSS</span><span>Redux Toolkit</span><span>Node.js</span>
+              </div>
+
+              <div class="cs-actions">
+                <a href="https://energymarketplace.interswitchgroup.com" target="_blank" rel="noopener" class="btn btn-primary magnetic cs-btn-energy">
+                  View Live Platform
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: staggered screenshots -->
+            <div class="cs-screens cs-screens-energy">
+              <div class="energy-screens-wrap">
+
+                <!-- Screenshot 1 — hero, large top -->
+                <div class="ess ess-1 cs-ss">
+                  <img src="assets/images/energy/energy_1_hero.png" alt="Interswitch Energy Marketplace - Smart energy, true freedom" loading="lazy" />
+                </div>
+
+                <!-- Screenshot 2 — products, overlapping bottom -->
+                <div class="ess ess-2 cs-ss">
+                  <img src="assets/images/energy/energy_2_products.png" alt="Interswitch Energy - Smart Power Solutions product catalogue" loading="lazy" />
+                </div>
+
+                <!-- Deco elements -->
+                <div class="ess-glow"></div>
+                <div class="ess-grid-deco"></div>
+                <div class="ess-badge-float">
+                  <span class="ess-badge-icon">⚡</span>
+                  <div>
+                    <div class="ess-badge-title">Solar Financing</div>
+                    <div class="ess-badge-sub">Powered by Interswitch</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ UILAND — CASE STUDY 4 ═══ -->
+      <div class="cs-wrap cs-wrap-uiland">
+        <div class="cs-card cs-card-uiland">
+
+          <div class="cs-topbar cs-topbar-uiland">
+            <div class="cs-live-badge">
+              <span class="cs-live-dot cs-live-dot-indigo"></span>
+              Live product · 25K+ designers worldwide
+            </div>
+            <a href="https://uiland.design" target="_blank" rel="noopener" class="cs-visit cs-visit-uiland magnetic">
+              uiland.design
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+
+          <!-- Reversed layout: mockup LEFT, info RIGHT -->
+          <div class="cs-body cs-body-uiland">
+
+            <!-- LEFT: Interactive UI mockup -->
+            <div class="cs-screens cs-screens-uiland">
+              <div class="uiland-mockup">
+
+                <!-- Browser chrome -->
+                <div class="ulm-browser">
+                  <div class="ulm-browser-bar">
+                    <div class="ulm-dots"><span></span><span></span><span></span></div>
+                    <div class="ulm-url">uiland.design</div>
+                    <div class="ulm-spacer"></div>
+                  </div>
+
+                  <!-- Nav -->
+                  <div class="ulm-nav">
+                    <div class="ulm-logo">UiLand</div>
+                    <div class="ulm-nav-links">
+                      <span>Mobile</span><span>Web</span><span>Components</span><span>Flows</span>
+                    </div>
+                    <div class="ulm-nav-cta">Pro</div>
+                  </div>
+
+                  <!-- Search bar -->
+                  <div class="ulm-search-row">
+                    <div class="ulm-search">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                      <span>Search 50,000+ screens...</span>
+                    </div>
+                    <div class="ulm-filter-pills">
+                      <span class="ulm-pill active">All</span>
+                      <span class="ulm-pill">iOS</span>
+                      <span class="ulm-pill">Android</span>
+                      <span class="ulm-pill">Web</span>
+                      <span class="ulm-pill">Africa</span>
+                    </div>
+                  </div>
+
+                  <!-- App grid with phone screens -->
+                  <div class="ulm-grid">
+                    <!-- Each cell: app card with mini phone screens -->
+                    <div class="ulm-app-card ulm-app-1">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s1"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s2"></div></div>
+                      <div class="ulm-app-name">Paystack</div>
+                      <div class="ulm-app-count">42 screens</div>
+                    </div>
+                    <div class="ulm-app-card ulm-app-2">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s3"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s4"></div></div>
+                      <div class="ulm-app-name">Airbnb</div>
+                      <div class="ulm-app-count">128 screens</div>
+                    </div>
+                    <div class="ulm-app-card ulm-app-3">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s5"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s6"></div></div>
+                      <div class="ulm-app-name">Kuda Bank</div>
+                      <div class="ulm-app-count">67 screens</div>
+                    </div>
+                    <div class="ulm-app-card ulm-app-4">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s7"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s8"></div></div>
+                      <div class="ulm-app-name">TikTok</div>
+                      <div class="ulm-app-count">95 screens</div>
+                    </div>
+                    <div class="ulm-app-card ulm-app-5">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s2"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s5"></div></div>
+                      <div class="ulm-app-name">Flutterwave</div>
+                      <div class="ulm-app-count">38 screens</div>
+                    </div>
+                    <div class="ulm-app-card ulm-app-6">
+                      <div class="ulm-phone"><div class="ulm-phone-screen s6"></div></div>
+                      <div class="ulm-phone"><div class="ulm-phone-screen s1"></div></div>
+                      <div class="ulm-app-name">Notion</div>
+                      <div class="ulm-app-count">84 screens</div>
+                    </div>
+                  </div>
+
+                  <!-- Stats bar at bottom -->
+                  <div class="ulm-stats-bar">
+                    <span><strong>50K+</strong> screens</span>
+                    <span><strong>25K+</strong> designers</span>
+                    <span><strong>500+</strong> apps</span>
+                    <span><strong>Free</strong> to use</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- RIGHT: info -->
+            <div class="cs-info cs-info-uiland">
+              <div class="cs-badges">
+                <span class="cs-badge freelance">Freelance</span>
+                <span class="cs-badge cs-badge-design">Design Tool</span>
+                <span class="cs-badge cs-badge-africa">Made in Africa</span>
+              </div>
+
+              <h3 class="cs-title">UiLand</h3>
+              <p class="cs-tagline">"Discover the best mobile &amp; web design inspiration."</p>
+
+              <p class="cs-desc">
+                Africa's largest mobile design reference library — a <strong>Mobbin alternative</strong>
+                built for the global design community. Designers browse 50,000+ real in-production
+                screens from iOS, Android, and web apps across Africa and worldwide.
+              </p>
+
+              <p class="cs-desc">
+                Brought in as freelance frontend engineer to architect and ship the full platform —
+                from search and filtering infrastructure to app screen browser, components
+                library, and a blazing-fast UI that serves designers at top companies daily.
+              </p>
+
+              <div class="cs-impact-row cs-impact-row-uiland">
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-uiland">50K+</span>
+                  <span class="cs-impact-label">Screens curated</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-uiland">25K+</span>
+                  <span class="cs-impact-label">Designers served</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-uiland">500+</span>
+                  <span class="cs-impact-label">Apps indexed</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-uiland">#1</span>
+                  <span class="cs-impact-label">African library</span>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>Next.js</span><span>TypeScript</span><span>React</span>
+                <span>Tailwind CSS</span><span>PostgreSQL</span><span>Node.js</span>
+              </div>
+
+              <div class="cs-actions">
+                <a href="https://uiland.design" target="_blank" rel="noopener" class="btn btn-primary magnetic cs-btn-uiland">
+                  View Live Site
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ STEWARD — CASE STUDY 3 ═══ -->
+      <div class="cs-wrap cs-wrap-steward">
+        <div class="cs-card cs-card-steward">
+
+          <div class="cs-topbar cs-topbar-steward">
+            <div class="cs-live-badge">
+              <span class="cs-live-dot cs-live-dot-gold"></span>
+              Personal Project · Founder &amp; Solo Engineer
+            </div>
+            <a href="https://github.com/Akius1" target="_blank" rel="noopener" class="cs-visit cs-visit-steward magnetic">
+              github.com/Akius1
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+
+          <div class="cs-body cs-body-steward">
+
+            <!-- LEFT: info -->
+            <div class="cs-info cs-info-steward">
+              <div class="cs-badges">
+                <span class="cs-badge cs-badge-founder">Founder</span>
+                <span class="cs-badge cs-badge-ai-gold">Claude API</span>
+                <span class="cs-badge cs-badge-rn">React Native</span>
+              </div>
+
+              <h3 class="cs-title cs-title-steward">Steward</h3>
+              <p class="cs-tagline">"Give every coin a purpose."</p>
+
+              <p class="cs-desc">
+                A premium personal finance and budgeting app for households — built from a blank canvas.
+                Full design system ownership, income allocation engine, smart sinking funds, life milestone
+                planner, and a <strong>Steward AI Coach</strong> powered by the Anthropic Claude API
+                with a full picture of your finances.
+              </p>
+
+              <p class="cs-desc">
+                Multi-currency (NGN, USD, GBP, EUR, KES + 10 more), household member sharing,
+                debt payoff planner (Avalanche &amp; Snowball), budget vs. actual tracking, and
+                AI-generated monthly report cards — architected and shipped solo.
+              </p>
+
+              <div class="cs-impact-row cs-impact-row-steward">
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-steward">V2</span>
+                  <span class="cs-impact-label">Roadmap live</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-steward">15+</span>
+                  <span class="cs-impact-label">Currencies</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-steward">AI</span>
+                  <span class="cs-impact-label">Claude-powered</span>
+                </div>
+                <div class="cs-impact-stat">
+                  <span class="cs-impact-num cs-impact-num-steward">iOS</span>
+                  <span class="cs-impact-label">+ Android</span>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React Native</span><span>TypeScript</span><span>Anthropic API</span>
+                <span>Claude Code</span><span>Node.js</span><span>Tailwind</span><span>Supabase</span>
+              </div>
+
+              <div class="cs-actions">
+                <a href="https://github.com/Akius1" target="_blank" rel="noopener" class="btn btn-primary magnetic cs-btn-steward">
+                  View on GitHub
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: phone screenshots -->
+            <div class="cs-screens cs-screens-steward">
+              <!-- 3-phone showcase layout -->
+              <div class="steward-phones">
+
+                <!-- Left phone — Login screen -->
+                <div class="sph sph-left">
+                  <div class="sph-inner">
+                    <img src="assets/images/steward/steward_5_login.jpeg" alt="Steward - Enter the Vault login screen" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Center phone — Income dashboard (hero) -->
+                <div class="sph sph-center">
+                  <div class="sph-inner">
+                    <img src="assets/images/steward/steward_1_income.jpeg" alt="Steward - Income dashboard ₦8.3M" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Right phone — AI Coach -->
+                <div class="sph sph-right">
+                  <div class="sph-inner">
+                    <img src="assets/images/steward/steward_4_ai.jpeg" alt="Steward AI Coach powered by Claude" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Floating mini screenshots -->
+                <div class="sph-float sph-float-tl cs-ss" data-src="assets/images/steward/steward_2_allocate.jpeg">
+                  <img src="assets/images/steward/steward_2_allocate.jpeg" alt="Steward allocation screen" loading="lazy" />
+                </div>
+                <div class="sph-float sph-float-br cs-ss" data-src="assets/images/steward/steward_3_plan.jpeg">
+                  <img src="assets/images/steward/steward_3_plan.jpeg" alt="Steward plan your legacy" loading="lazy" />
+                </div>
+
+                <!-- Decorative -->
+                <div class="sph-glow sph-glow-1"></div>
+                <div class="sph-glow sph-glow-2"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ OTHER PROJECTS GRID ═══ -->
+      <div class="other-projects-header">
+        <span class="op-label">More work</span>
+        <div class="op-line"></div>
+      </div>
+
+      <div class="other-projects-grid">
+
+        <!-- Steward placeholder removed — now a full case study above -->
+
+        <!-- Design System -->
+        <div class="op-card">
+          <div class="op-card-top ds-bg">
+            <div class="op-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content payment">
+                <div class="mockup-stat-row">
+                  <div class="mockup-stat-box"></div><div class="mockup-stat-box"></div>
+                </div>
+                <div class="mockup-table">
+                  <div class="mockup-table-row"></div>
+                  <div class="mockup-table-row"></div>
+                  <div class="mockup-table-row"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="op-info">
+            <div class="op-tags">
+              <span class="op-tag">Interswitch Group</span>
+              <span class="op-tag">Design System</span>
+            </div>
+            <h3 class="op-title">Component Library</h3>
+            <p class="op-desc">React + TypeScript design system built from scratch with Storybook. Adopted across 3+ product lines at Nigeria's #1 payment company.</p>
+            <div class="op-stack">
+              <span>TypeScript</span><span>React</span><span>Storybook</span><span>Jest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiftpay -->
+        <div class="op-card">
+          <div class="op-card-top swift-bg">
+            <div class="op-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content bank">
+                <div class="mockup-form">
+                  <div class="mockup-input"></div>
+                  <div class="mockup-input"></div>
+                  <div class="mockup-btn"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="op-info">
+            <div class="op-tags">
+              <span class="op-tag">Access Bank</span>
+              <span class="op-tag">FinTech</span>
+            </div>
+            <h3 class="op-title">Swiftpay</h3>
+            <p class="op-desc">Cross-platform React Native payments app integrating Interswitch &amp; Paystack for Africa's largest bank — 50M+ customers.</p>
+            <div class="op-stack">
+              <span>React Native</span><span>TypeScript</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Applicant Platform -->
+        <div class="op-card">
+          <div class="op-card-top ap-bg">
+            <div class="op-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content applicant">
+                <div class="mockup-list">
+                  <div class="mockup-list-item"></div>
+                  <div class="mockup-list-item"></div>
+                  <div class="mockup-list-item"></div>
+                  <div class="mockup-list-item short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="op-info">
+            <div class="op-tags">
+              <span class="op-tag">Africa Prudential</span>
+              <span class="op-tag">Full-Stack</span>
+            </div>
+            <h3 class="op-title">Applicant Platform</h3>
+            <p class="op-desc">Full-stack platform handling 10,000+ applications annually. React/TypeScript SPA migration that cut load times by 50%.</p>
+            <div class="op-stack">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <span class="section-tag">05 - Contact</span>
+        <h2 class="contact-title split-text">Let's build<br/><em>something great.</em></h2>
+        <p class="contact-sub">
+          Open to senior frontend, full-stack, or design system roles.
+          Also available for AI-native product consulting.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:andrewurom@gmail.com" class="contact-email magnetic">
+            andrewurom@gmail.com
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/Akius1" target="_blank" rel="noopener" class="c-social magnetic">GitHub</a>
+          <a href="https://linkedin.com/in/andrew-urom" target="_blank" rel="noopener" class="c-social magnetic">LinkedIn</a>
+          <a href="tel:+2348167334417" class="c-social magnetic">+234 816 733 4417</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Andrew Urom. Built with craft.</span>
+      <span>Lagos, Nigeria</span>
+    </div>
+  </footer>
+
+  <!-- Image Lightbox -->
+  <div class="img-lightbox" id="lightbox">
+    <button class="img-lightbox-close" id="lightboxClose">&#x2715;</button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

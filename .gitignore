@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+
+# Raw source folders (not needed in deploy)
+goodaction_freelance_project/
+energy-marketplace/
+stewardapp/
+
+# Vercel
+.vercel/
