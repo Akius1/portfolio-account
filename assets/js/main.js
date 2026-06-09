@@ -218,21 +218,6 @@ function initAnimations() {
     }
   });
 
-  // Steward case study entrance
-  ScrollTrigger.create({
-    trigger: '.cs-card-steward',
-    start: 'top 88%',
-    once: true,
-    onEnter: () => {
-      gsap.from('.cs-card-steward', { opacity: 0, y: 60, duration: 1, ease: 'power3.out' });
-      gsap.from('.sph-center', { opacity: 0, y: 80, duration: 1,   ease: 'power3.out', delay: 0.3 });
-      gsap.from('.sph-left',   { opacity: 0, x: -60, rotate: -12, duration: 1, ease: 'power3.out', delay: 0.45 });
-      gsap.from('.sph-right',  { opacity: 0, x:  60, rotate:  12, duration: 1, ease: 'power3.out', delay: 0.45 });
-      gsap.from('.sph-float-tl', { opacity: 0, scale: 0.7, duration: 0.8, ease: 'back.out(1.5)', delay: 0.7 });
-      gsap.from('.sph-float-br', { opacity: 0, scale: 0.7, duration: 0.8, ease: 'back.out(1.5)', delay: 0.85 });
-    }
-  });
-
   // UiLand case study entrance
   ScrollTrigger.create({
     trigger: '.cs-card-uiland',
