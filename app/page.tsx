@@ -1,6 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import { Suspense } from "react";
+import AuthCodeRedirect from "@/components/AuthCodeRedirect";
 
 const HomeAnimations = dynamic(
   () => import("@/components/home/HomeAnimations"),
@@ -11,6 +13,9 @@ export default function Home() {
   return (
     <>
       <HomeAnimations />
+      <Suspense>
+        <AuthCodeRedirect />
+      </Suspense>
 
       {/* Navigation */}
       <nav className="nav" id="nav">
