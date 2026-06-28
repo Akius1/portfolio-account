@@ -1,6 +1,7 @@
 import { anthropic } from "@/lib/claude";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { selectedText, instruction, context } = await req.json();
