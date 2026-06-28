@@ -72,7 +72,7 @@ export default function CommentsSection({ postId, postSlug, initialComments }: P
   }, [postId]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSignIn = async (provider: "github" | "google") => {
-    const base = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
+    const base = window.location.origin;
     await supabase.auth.signInWithOAuth({
       provider,
       options: { redirectTo: `${base}/auth/callback?next=/blog/${postSlug}` },
