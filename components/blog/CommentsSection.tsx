@@ -225,7 +225,7 @@ function CommentItem({
   onSubmitReply: () => void;
   submitting: boolean;
   user: { id: string; user_metadata: { avatar_url?: string } } | null;
-  onSignIn: () => void;
+  onSignIn: (provider: "github" | "google") => void;
 }) {
   return (
     <div>
