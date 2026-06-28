@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "../styles/portfolio.css";
+@import "../styles/projects.css";
+
+/* ── Blog prose content (rendered Tiptap HTML) ── */
+.tiptap-content h1 { font-size: 2rem; font-weight: 800; margin: 1.5rem 0 0.75rem; font-family: var(--font-display); }
+.tiptap-content h2 { font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 0.75rem; font-family: var(--font-display); }
+.tiptap-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+.tiptap-content p  { line-height: 1.8; margin-bottom: 1rem; color: var(--gray-600); }
+.tiptap-content strong { color: var(--dark); }
+.tiptap-content a  { color: var(--accent-blue); text-decoration: underline; }
+.tiptap-content ul, .tiptap-content ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+.tiptap-content li { line-height: 1.8; color: var(--gray-600); }
+.tiptap-content blockquote {
+  border-left: 3px solid var(--accent-blue);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background: var(--accent-light);
+  border-radius: 0 8px 8px 0;
+}
+.tiptap-content blockquote p { color: var(--dark); margin: 0; }
+.tiptap-content pre {
+  background: #0d1117;
+  color: #e6edf3;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.tiptap-content code {
+  background: var(--gray-100);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+.tiptap-content pre code { background: none; padding: 0; border-radius: 0; }
+.tiptap-content img { max-width: 100%; border-radius: 10px; margin: 1.5rem 0; }
+.tiptap-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.tiptap-content th, .tiptap-content td { border: 1px solid var(--gray-200); padding: 0.6rem 0.8rem; text-align: left; }
+.tiptap-content th { background: var(--light); font-weight: 600; }
+.tiptap-content hr { border: none; border-top: 1px solid var(--gray-200); margin: 2rem 0; }
+
+/* Tiptap editor placeholder */
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--gray-400);
+  pointer-events: none;
+  height: 0;
+}
+
+/* Code syntax highlighting */
+.hljs-keyword  { color: #ff7b72; }
+.hljs-string   { color: #a5d6ff; }
+.hljs-comment  { color: #8b949e; font-style: italic; }
+.hljs-number   { color: #79c0ff; }
+.hljs-function { color: #d2a8ff; }
+.hljs-title    { color: #d2a8ff; }
+.hljs-attr     { color: #79c0ff; }
+.hljs-tag      { color: #7ee787; }
+.hljs-built_in { color: #ffa657; }
