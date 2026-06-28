@@ -11,10 +11,11 @@ function LoginContent() {
   const error = searchParams.get("error");
 
   const signIn = async (provider: "github" | "google") => {
+    const base = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
     await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: `${window.location.origin}/auth/callback?next=${next}`,
+        redirectTo: `${base}/auth/callback?next=${next}`,
       },
     });
   };
