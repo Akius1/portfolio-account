@@ -247,7 +247,7 @@ function CommentItem({
           </div>
           <p style={{ color: "var(--gray-600)", fontSize: "0.9rem", lineHeight: 1.6 }}>{comment.body}</p>
           <button
-            onClick={() => user ? setReplyTo(replyTo === comment.id ? null : comment.id) : onSignIn()}
+            onClick={() => user ? setReplyTo(replyTo === comment.id ? null : comment.id) : onSignIn("google")}
             style={{ marginTop: "8px", background: "none", border: "none", cursor: "pointer", fontSize: "0.8rem", color: "var(--accent-blue)", fontWeight: 500 }}
           >
             {replyTo === comment.id ? "Cancel" : "Reply"}
