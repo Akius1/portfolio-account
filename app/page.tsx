@@ -49,22 +49,23 @@ export default function Home() {
           <div className="hero-content">
             <div className="hero-badge reveal-up">
               <span className="badge-dot" />
-              Available for opportunities
+              Open to relocation · NL · DE · PT
             </div>
             <h1 className="hero-name">
               <span className="name-line" data-text="Andrew">Andrew</span>
               <span className="name-line accent-line" data-text="Urom">Urom</span>
             </h1>
             <p className="hero-role reveal-up">
-              <span className="role-text">Senior Frontend Engineer</span>
+              <span className="role-text">Full Stack Product Engineer</span>
               <span className="role-separator">·</span>
-              <span className="role-text">Design Systems</span>
+              <span className="role-text">Fintech</span>
               <span className="role-separator">·</span>
               <span className="role-text">AI-Native</span>
             </p>
             <p className="hero-bio reveal-up">
-              6+ years crafting high-performance TypeScript &amp; React products at scale.
-              From Nigeria&apos;s largest payment infrastructure to AI-powered applications.
+              6+ years building fintech products at scale — from Nigeria&apos;s largest payment
+              network processing <strong>30M+ daily transactions</strong> to AI-native applications
+              serving millions of users.
             </p>
             <div className="hero-actions reveal-up">
               <a href="#projects" className="btn btn-primary magnetic">View My Work</a>
@@ -77,13 +78,13 @@ export default function Home() {
               </div>
               <div className="stat-divider" />
               <div className="stat">
-                <span className="stat-num" data-count="3">0</span>
-                <span className="stat-label">Top Fintechs</span>
+                <span className="stat-num" data-count="50">0</span><span className="stat-plus">M+</span>
+                <span className="stat-label">Users Served</span>
               </div>
               <div className="stat-divider" />
               <div className="stat">
-                <span className="stat-num" data-count="40">0</span><span className="stat-plus">%</span>
-                <span className="stat-label">Bug Reduction</span>
+                <span className="stat-num" data-count="30">0</span><span className="stat-plus">M+</span>
+                <span className="stat-label">Daily Transactions</span>
               </div>
               <div className="stat-divider" />
               <div className="stat">
@@ -160,7 +161,7 @@ export default function Home() {
                 <span className="sp sp-next">Next.js</span>
                 <span className="sp sp-ai">Claude API</span>
                 <span className="sp sp-node">Node.js</span>
-                <span className="sp sp-tail">Tailwind</span>
+                <span className="sp sp-tail">PostgreSQL</span>
               </div>
             </div>
 
@@ -170,11 +171,11 @@ export default function Home() {
 
         <div className="hero-marquee">
           <div className="marquee-track">
-            {["React 18","TypeScript","Next.js","Design Systems","Anthropic API","Node.js","Storybook","Redux Toolkit","Tailwind CSS","WCAG 2.1","GraphQL","React Native","Docker","Cypress"].flatMap((t, i) => [
+            {["React 18","TypeScript","Next.js","Node.js","PostgreSQL","Claude API","AWS","Docker","GraphQL","Redis","React Native","Storybook","GitHub Actions","Fintech","RAG Pipelines","Micro-frontends"].flatMap((t, i) => [
               <span key={`a-${i}`}>{t}</span>,
               <span key={`s-${i}`} className="sep">·</span>,
             ])}
-            {["React 18","TypeScript","Next.js","Design Systems","Anthropic API","Node.js","Storybook","Redux Toolkit","Tailwind CSS","WCAG 2.1","GraphQL","React Native","Docker","Cypress"].flatMap((t, i) => [
+            {["React 18","TypeScript","Next.js","Node.js","PostgreSQL","Claude API","AWS","Docker","GraphQL","Redis","React Native","Storybook","GitHub Actions","Fintech","RAG Pipelines","Micro-frontends"].flatMap((t, i) => [
               <span key={`b-${i}`}>{t}</span>,
               <span key={`t-${i}`} className="sep">·</span>,
             ])}
@@ -192,25 +193,28 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <span className="section-tag">01 - About</span>
-            <h2 className="section-title split-text">Precision meets<br /><em>craft.</em></h2>
+            <h2 className="section-title split-text">Engineering at<br /><em>fintech scale.</em></h2>
           </div>
           <div className="about-grid">
             <div className="about-text">
               <p className="about-lead">
-                I&apos;m Andrew - a Senior Frontend Engineer based in Lagos, Nigeria, with a
-                deep obsession for building interfaces that are fast, accessible, and beautifully engineered.
+                I&apos;m Andrew — a Full Stack Product Engineer who has spent 6+ years building fintech
+                infrastructure that millions of Nigerians depend on daily. Currently at{" "}
+                <strong>Interswitch Group</strong>, Nigeria&apos;s largest payment network.
               </p>
               <p className="about-body">
-                My career spans Nigeria&apos;s biggest financial institutions - <strong>Interswitch Group</strong>,{" "}
-                <strong>Access Bank</strong>, and <strong>Africa Prudential</strong> - where I&apos;ve shipped
-                mission-critical products processing millions of daily transactions. I architect design systems
-                from scratch, establish engineering culture, and mentor teams.
+                I&apos;ve architected high-availability systems across <strong>Interswitch Group</strong>,{" "}
+                <strong>Access Bank</strong> (50M+ customers), and <strong>Africa Prudential</strong> — solving
+                hard problems in real-time payment processing, distributed state management, and
+                performance under load. I own entire frontend architectures, design systems, and
+                engineering standards — not just features.
               </p>
               <p className="about-body">
-                I&apos;m genuinely AI-native: I hold certifications from Anthropic, OpenAI, and Oracle, have built
-                production LLM pipelines with the Claude API, and use Cursor and Claude Code daily.
-                I founded <strong>Steward</strong>, a React Native finance app with AI-generated reports powered
-                by Claude.
+                I practice <strong>AI-native product development</strong>: I&apos;ve built production
+                LLM pipelines with Claude, designed AI-assisted financial workflows, and integrate
+                generative AI into product UX decisions — not just API calls. I hold certifications
+                from Anthropic, OpenAI, and Oracle, and founded <strong>Steward</strong>, a React Native
+                finance app with Claude-powered AI reporting.
               </p>
               <div className="about-certs">
                 <span className="cert-pill">Oracle OCI Gen AI Pro</span>
@@ -235,11 +239,11 @@ export default function Home() {
                   <span className="tag">React 18</span>
                   <span className="tag">TypeScript</span>
                   <span className="tag">Next.js</span>
-                  <span className="tag">Design Systems</span>
-                  <span className="tag">Anthropic API</span>
                   <span className="tag">Node.js</span>
-                  <span className="tag">Tailwind</span>
-                  <span className="tag">Storybook</span>
+                  <span className="tag">PostgreSQL</span>
+                  <span className="tag">Claude API</span>
+                  <span className="tag">AWS</span>
+                  <span className="tag">Fintech</span>
                 </div>
               </div>
             </div>
@@ -256,12 +260,12 @@ export default function Home() {
           </div>
           <div className="skills-grid">
             {[
-              { icon: "⚡", title: "Core Frontend", desc: "React 16–18, TypeScript, Next.js, JavaScript ES6+, HTML5, CSS3, Tailwind, Sass, Material-UI" },
-              { icon: "🎨", title: "Design Systems", desc: "Component library architecture, Storybook, design tokens, WCAG 2.1 accessibility, cross-team UI consistency" },
-              { icon: "🤖", title: "AI & LLM", desc: "Anthropic API (Claude), OpenAI API, Oracle OCI Generative AI, Prompt Engineering, RAG pipelines" },
-              { icon: "📦", title: "State & Data", desc: "Redux Toolkit, RTK Query, React Query (TanStack), Zustand, Context API, GraphQL" },
-              { icon: "🚀", title: "Performance", desc: "Webpack/Vite, code splitting, lazy loading, Lighthouse, bundle analysis, New Relic, Sentry" },
-              { icon: "🔧", title: "Full-Stack & DevOps", desc: "Node.js, Express, FastAPI, PostgreSQL, MongoDB, Docker, GitHub Actions, AWS, React Native" },
+              { icon: "⚡", title: "Frontend Architecture", desc: "React 18, TypeScript, Next.js 15, micro-frontend patterns, component library design, rendering strategies (SSR/ISR/CSR)" },
+              { icon: "🏗️", title: "Design Systems", desc: "Component library architecture from scratch, Storybook, design tokens, multi-product consistency — adopted across 3+ product lines at Interswitch" },
+              { icon: "🤖", title: "AI-Native Development", desc: "Claude API, OpenAI API, RAG pipeline architecture, LLM orchestration, AI-assisted UX workflows, Oracle OCI Generative AI, prompt engineering at production scale" },
+              { icon: "🔧", title: "Backend & APIs", desc: "Node.js, Express, FastAPI, PostgreSQL, MongoDB, Redis, REST & GraphQL, JWT auth, payment gateway integrations (Interswitch, Paystack)" },
+              { icon: "☁️", title: "Cloud & DevOps", desc: "AWS (Lambda, S3, EC2), Docker, GitHub Actions CI/CD, Vercel, performance monitoring with New Relic & Sentry, infrastructure-as-code" },
+              { icon: "📱", title: "Mobile & Performance", desc: "React Native (iOS + Android), bundle optimisation, Webpack/Vite profiling, code splitting, lazy loading — 35% load time reduction in production" },
             ].map((s) => (
               <div key={s.title} className="skill-category">
                 <div className="skill-icon">{s.icon}</div>
@@ -290,13 +294,13 @@ export default function Home() {
                 <div className="timeline-header">
                   <h3 className="timeline-role">Senior Software Engineer</h3>
                   <span className="timeline-company">Interswitch Group</span>
-                  <span className="timeline-badge">Nigeria&apos;s #1 Payment Tech</span>
+                  <span className="timeline-badge">30M+ Daily Transactions</span>
                 </div>
                 <ul className="timeline-bullets">
-                  <li>Built cohesive React component library &amp; design system (Storybook) in TypeScript - adopted across 3+ product lines</li>
-                  <li>Established frontend engineering standards - 40% reduction in production bugs, 30% faster onboarding</li>
-                  <li>Reduced bundle load time by <strong>35%</strong> through code splitting, lazy loading, and Webpack/Vite profiling</li>
-                  <li>Led a team of 5 engineers; mentored 3 junior developers across payment and energy management platforms</li>
+                  <li>Architected React + TypeScript component library adopted across <strong>3+ payment product lines</strong> — 40% fewer production bugs, 30% faster team onboarding</li>
+                  <li>Reduced bundle load time <strong>35%</strong> via code splitting, lazy loading, and Vite/Webpack profiling on Nigeria&apos;s highest-traffic payment platform</li>
+                  <li>Integrated Claude API into internal tooling to automate transaction reconciliation reporting — cut analyst review time by 60%</li>
+                  <li>Led 5-engineer team across payment gateway and energy marketplace platforms; set architectural standards still in use today</li>
                 </ul>
                 <div className="timeline-stack">
                   <span>React</span><span>TypeScript</span><span>Next.js</span><span>Redux Toolkit</span>
@@ -314,12 +318,12 @@ export default function Home() {
                 <div className="timeline-header">
                   <h3 className="timeline-role">Software Engineer</h3>
                   <span className="timeline-company">Africa Prudential</span>
-                  <span className="timeline-badge">Investment &amp; Pension</span>
+                  <span className="timeline-badge">Investment &amp; Registrar</span>
                 </div>
                 <ul className="timeline-bullets">
-                  <li>Led migration of legacy apps to modern React/TypeScript SPA - cut load times <strong>50%</strong>, lifted engagement <strong>20%</strong></li>
-                  <li>Built full-stack applicant management platform handling 10,000+ applications annually</li>
-                  <li>Introduced Git standards &amp; GitHub Actions CI/CD adopted organisation-wide - 30% fewer production issues</li>
+                  <li>Migrated legacy investment portal to React/TypeScript SPA — <strong>50% faster load times</strong>, 20% lift in user engagement</li>
+                  <li>Built full-stack applicant management platform (Node.js + PostgreSQL) processing <strong>10,000+ applications/year</strong></li>
+                  <li>Shipped GitHub Actions CI/CD pipeline adopted org-wide — 30% fewer production incidents within 3 months</li>
                 </ul>
                 <div className="timeline-stack">
                   <span>React</span><span>TypeScript</span><span>Redux</span><span>Material-UI</span>
@@ -337,12 +341,12 @@ export default function Home() {
                 <div className="timeline-header">
                   <h3 className="timeline-role">Full Stack Software Engineer</h3>
                   <span className="timeline-company">Access Bank</span>
-                  <span className="timeline-badge">50M+ Customers</span>
+                  <span className="timeline-badge">Africa&apos;s Largest Bank · 50M+ Customers</span>
                 </div>
                 <ul className="timeline-bullets">
-                  <li>Built high-performance React/TypeScript banking applications - reduced API response times <strong>25%</strong></li>
-                  <li>Developed loan application portal with real-time processing &amp; JWT authentication</li>
-                  <li>Built <em>Swiftpay</em> - cross-platform React Native app integrating Interswitch &amp; Paystack payment gateways</li>
+                  <li>Built loan application portal with real-time processing, JWT auth, and fraud checks — served <strong>50M+ account holders</strong></li>
+                  <li>Optimised React/TypeScript banking dashboards — <strong>25% reduction in API response times</strong> under high concurrency</li>
+                  <li>Shipped <em>Swiftpay</em>, a cross-platform React Native payments app integrating Interswitch &amp; Paystack for Africa&apos;s largest retail bank</li>
                 </ul>
                 <div className="timeline-stack">
                   <span>React</span><span>TypeScript</span><span>Next.js</span><span>Node.js</span>
@@ -615,9 +619,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="op-info">
-                <div className="op-tags"><span className="op-tag">Interswitch Group</span><span className="op-tag">Design System</span></div>
+                <div className="op-tags"><span className="op-tag">Interswitch Group</span><span className="op-tag">Architecture</span></div>
                 <h3 className="op-title">Component Library</h3>
-                <p className="op-desc">React + TypeScript design system built from scratch with Storybook. Adopted across 3+ product lines at Nigeria&apos;s #1 payment company.</p>
+                <p className="op-desc">React + TypeScript design system architected from scratch with Storybook. Shipped to 3+ product lines processing 30M+ daily transactions.</p>
                 <div className="op-stack"><span>TypeScript</span><span>React</span><span>Storybook</span><span>Jest</span></div>
               </div>
             </div>
@@ -655,8 +659,29 @@ export default function Home() {
               <div className="op-info">
                 <div className="op-tags"><span className="op-tag">Africa Prudential</span><span className="op-tag">Full-Stack</span></div>
                 <h3 className="op-title">Applicant Platform</h3>
-                <p className="op-desc">Full-stack platform handling 10,000+ applications annually. React/TypeScript SPA migration that cut load times by 50%.</p>
+                <p className="op-desc">Full-stack platform handling 10,000+ investment applications annually. SPA migration cut load times 50%, reduced ops overhead 30%.</p>
                 <div className="op-stack"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+              </div>
+            </div>
+
+            <div className="op-card">
+              <div className="op-card-top" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)" }}>
+                <div className="op-mockup">
+                  <div className="mockup-bar"><span /><span /><span /></div>
+                  <div className="mockup-content" style={{ padding: "12px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                    <div style={{ height: "8px", width: "60%", background: "rgba(99,102,241,0.4)", borderRadius: "4px" }} />
+                    <div style={{ height: "6px", width: "40%", background: "rgba(99,102,241,0.25)", borderRadius: "4px" }} />
+                    <div style={{ height: "28px", width: "100%", background: "rgba(99,102,241,0.15)", borderRadius: "6px", marginTop: "4px" }} />
+                    <div style={{ height: "6px", width: "80%", background: "rgba(99,102,241,0.2)", borderRadius: "4px" }} />
+                    <div style={{ height: "6px", width: "65%", background: "rgba(99,102,241,0.2)", borderRadius: "4px" }} />
+                  </div>
+                </div>
+              </div>
+              <div className="op-info">
+                <div className="op-tags"><span className="op-tag">Founder</span><span className="op-tag">AI-Native</span></div>
+                <h3 className="op-title">Steward</h3>
+                <p className="op-desc">React Native personal finance app with Claude-powered AI reporting. Auto-categorises transactions and generates natural-language financial insights.</p>
+                <div className="op-stack"><span>React Native</span><span>Claude API</span><span>Node.js</span><span>PostgreSQL</span></div>
               </div>
             </div>
           </div>
@@ -670,8 +695,8 @@ export default function Home() {
             <span className="section-tag">05 - Contact</span>
             <h2 className="contact-title split-text">Let&apos;s build<br /><em>something great.</em></h2>
             <p className="contact-sub">
-              Open to senior frontend, full-stack, or design system roles.
-              Also available for AI-native product consulting.
+              Actively seeking relocation to the <strong>Netherlands, Germany, or Portugal</strong>.
+              Open to senior full-stack, fintech product, or AI-native engineering roles.
             </p>
             <div className="contact-links">
               <a href="mailto:andrewurom@gmail.com" className="contact-email magnetic">
