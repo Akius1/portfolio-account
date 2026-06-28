@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import type { Post, Comment } from "@/types/blog";
 import LikeButton from "@/components/blog/LikeButton";
 import CommentsSection from "@/components/blog/CommentsSection";
+import ShareButtons from "@/components/blog/ShareButtons";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -121,12 +122,19 @@ export default async function PostPage({ params }: Props) {
             style={{ fontSize: "1.0625rem", lineHeight: 1.8 }}
           />
 
-          {/* Like button */}
-          <div style={{ borderTop: "1px solid var(--gray-100)", paddingTop: "32px", marginTop: "48px", display: "flex", alignItems: "center", gap: "16px" }}>
-            <LikeButton postId={typedPost.id} initialCount={likeCount ?? 0} />
-            <span style={{ color: "var(--gray-400)", fontSize: "0.875rem" }}>
-              {likeCount ?? 0} {(likeCount ?? 0) === 1 ? "like" : "likes"}
-            </span>
+          {/* Like + Share */}
+          <div style={{ borderTop: "1px solid var(--gray-100)", paddingTop: "32px", marginTop: "48px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
+              <LikeButton postId={typedPost.id} initialCount={likeCount ?? 0} />
+              <span style={{ color: "var(--gray-400)", fontSize: "0.875rem" }}>
+                {likeCount ?? 0} {(likeCount ?? 0) === 1 ? "like" : "likes"}
+              </span>
+            </div>
+            <ShareButtons
+              title={typedPost.title}
+              excerpt={typedPost.excerpt ?? ""}
+              slug={typedPost.slug}
+            />
           </div>
 
           {/* Comments */}

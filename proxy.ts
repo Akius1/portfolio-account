@@ -51,5 +51,8 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/((?!_next/static|_next/image|favicon|assets).*)"],
+  matcher: [
+    "/admin/:path*",
+    "/((?!_next/static|_next/image|favicon|assets|auth/callback).*)",
+  ],
 };
