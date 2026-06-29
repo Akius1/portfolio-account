@@ -19,9 +19,20 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="nav" id="nav">
-        <a href="#" className="nav-logo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-au.svg" alt="Andrew Urom" height="36" style={{ display: "block" }} />
+        <a href="#" className="nav-logo" style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+          <span style={{
+            display: "inline-flex", alignItems: "center", justifyContent: "center",
+            width: "32px", height: "32px", borderRadius: "8px",
+            background: "#141412", color: "#fff",
+            fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.85rem",
+            letterSpacing: "-0.5px", flexShrink: 0, position: "relative",
+          }}>
+            AU
+            <span style={{ position: "absolute", top: "4px", right: "4px", width: "5px", height: "5px", borderRadius: "50%", background: "#1a56db" }} />
+          </span>
+          <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "0.95rem", color: "var(--dark)", letterSpacing: "-0.3px" }}>
+            Andrew Urom
+          </span>
         </a>
         <div className="nav-links">
           <a href="#about" className="nav-link">About</a>
