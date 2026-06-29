@@ -19,7 +19,10 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="nav" id="nav">
-        <a href="#" className="nav-logo">Andrew Urom</a>
+        <a href="#" className="nav-logo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-au.svg" alt="Andrew Urom" height="36" style={{ display: "block" }} />
+        </a>
         <div className="nav-links">
           <a href="#about" className="nav-link">About</a>
           <a href="#experience" className="nav-link">Experience</a>
@@ -68,7 +71,7 @@ export default function Home() {
               <span className="role-text">AI-Native</span>
             </p>
             <p className="hero-bio reveal-up">
-              6+ years building fintech products at scale — from Nigeria&apos;s largest payment
+              6+ years building fintech products at scale: from Nigeria&apos;s largest payment
               network processing <strong>30M+ daily transactions</strong> to AI-native applications
               serving millions of users.
             </p>
@@ -203,7 +206,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-text">
               <p className="about-lead">
-                I&apos;m Andrew — a Full Stack Product Engineer who has spent 6+ years building fintech
+                I&apos;m Andrew, a Full Stack Product Engineer who has spent 6+ years building fintech
                 infrastructure that millions of Nigerians depend on daily. Currently at{" "}
                 <strong>Interswitch Group</strong>, Nigeria&apos;s largest payment network.
               </p>
@@ -326,7 +329,7 @@ export default function Home() {
                   <span className="timeline-badge">Investment &amp; Registrar</span>
                 </div>
                 <ul className="timeline-bullets">
-                  <li>Migrated legacy investment portal to React/TypeScript SPA — <strong>50% faster load times</strong>, 20% lift in user engagement</li>
+                  <li>Migrated legacy investment portal to React/TypeScript SPA, achieving <strong>50% faster load times</strong> and 20% lift in user engagement</li>
                   <li>Built full-stack applicant management platform (Node.js + PostgreSQL) processing <strong>10,000+ applications/year</strong></li>
                   <li>Shipped GitHub Actions CI/CD pipeline adopted org-wide — 30% fewer production incidents within 3 months</li>
                 </ul>
