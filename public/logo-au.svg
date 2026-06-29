@@ -1,0 +1,6 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="600" rx="48" fill="#141412"/>
+  <text x="300" y="390" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="300" letter-spacing="-6">AU</text>
+  <circle cx="448" cy="155" r="22" fill="#1a56db"/>
+  <text x="300" y="530" text-anchor="middle" fill="#9a9a96" font-family="Arial, sans-serif" font-weight="400" font-size="22" letter-spacing="6">ANDREW UROM</text>
+</svg>
